@@ -258,11 +258,121 @@ img{
   row-gap: 1rem;
 }
 
-/* .home__social-icon{
-  font-size: 1.25rem;
-  color: var(--first-color);
+.home__social-icon1{
+  width: 25px;
+  height: 25px;
+  background-repeat: no-repeat;
+  background-image:url('../img/linkedin\ \(1\).png');
+  background-size: contain;
+}
+
+.home__social-icon1:hover{
+  width: 25px;
+  height: 25px;
+  background-repeat: no-repeat;
+  background-image:url('../img/linkedin.png');
+  background-position: center;
+  background-size: contain;
+}
+
+.home__social-icon2{
+  width: 25px;
+  height: 25px;
+  background-repeat: no-repeat;
+  background-image:url('../img/github\ \(1\).png');
+  background-size: contain;
+}
+
+.home__social-icon2:hover{
+  width: 25px;
+  height: 25px;
+  background-repeat: no-repeat;
+  background-image:url('../img/github.png');
+  background-position: center;
+  background-size: contain;
+}
+
+.home__blob{
+  width: 200px;
+  fill: var(--first-color);
+}
+
+.home__blob-img{
+  width: 135px;
+}
+
+.home__data{
+  grid-column: 1/3;
+}
+
+.home__title{
+  font-size: var(--big-font-size);
+}
+
+.home__subtitle{
+  font-size: var(--h3-font-size);
+  color: var(--text-color);
+  font-weight: var(--font-medium);
+  margin-bottom: var(--mb-0-75);
+}
+
+.home__description{
+  margin-bottom: var(--mb-2);
+}
+
+/* .home__scroll{
+  display:none;
 } */
 
+.home__scroll-button{
+  color: var(--first-color);
+  transition: .3s;
+  display: flex;
+  align-items: flex-end;
+}
+
+.home__scroll-button:hover{
+  transform: translateY(.25rem);
+}
+
+.home__scroll-mouse{
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-image:url('../img/mouse.png');
+  background-position: center;
+  background-size: contain;
+}
+
+.home__scrol-name{
+  font-size: var(--small-font-size);
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+  margin-right: var(--mb-0-25);
+}
+
+.home__scroll-arrow{
+  width: 22px;
+  height: 22px;
+  background-repeat: no-repeat;
+  background-image:url('../img/arrow.png');
+  background-position: center;
+  background-size: contain;
+}
+
+.contacMe-button{
+  display: flex;
+  align-items: center;
+}
+
+.button__icon{
+  width: 16px;
+  height: 16px;
+  background-image: url('../img/send.png');
+  background-position: center;
+  background-size: contain;
+  margin-left: 10px;
+}
 
 /*==================== BUTTONS ====================*/
 
