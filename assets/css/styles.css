@@ -116,11 +116,11 @@ img{
   padding: 2rem 0 4rem;
 }
 
-.section_title{
+.section__title{
   font-size: var(--h1-font-size);
 }
 
-.section_subtitle{
+.section__subtitle{
   display: block;
   font-size: var(--small-font-size);
   margin-bottom: var(--mb-3);
@@ -250,6 +250,7 @@ img{
   grid-template-columns: .5fr 3fr;
   padding-top: 3.5rem;
   align-items: center;
+  justify-items: center;
 }
 
 .home__social{
@@ -320,9 +321,9 @@ img{
   margin-bottom: var(--mb-2);
 }
 
-/* .home__scroll{
+.home__scroll{
   display:none;
-} */
+}
 
 .home__scroll-button{
   color: var(--first-color);
@@ -366,18 +367,93 @@ img{
 }
 
 .button__icon{
-  width: 16px;
-  height: 16px;
-  background-image: url('../img/send.png');
+  width: 20px;
+  height: 20px;
+  background-image: url('../img/send\ \(1\).png');
   background-position: center;
   background-size: contain;
-  margin-left: 10px;
+  margin-left: var(--mb-0-5);
+  transition: .3s;
 }
 
 /*==================== BUTTONS ====================*/
+.button{
+  /* display:inline-block; */
+  width: max-content;
+  background-color: var(--first-color);
+  color: #fff;
+  padding: 1rem;
+  border-radius: .5rem;
+  font-weight: var(--font-medium);
+}
 
+.button:hover{
+  background-color: var(--first-color-alt);
+}
+
+/* .button--flex{
+  display: inline-flex;
+  align-items: center;
+} */
 
 /*==================== ABOUT ====================*/
+.titleAndSubtitle__about{
+  text-align: center;
+}
+
+.about__img{
+  width: 200px;
+  border-radius: .5rem;
+  justify-self: center;
+  align-self: center;
+}
+
+.about__description{
+  text-align: center;
+  margin-bottom: var(--mb-2-5);
+}
+
+.about__info{
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: var(--mb-2-5);
+}
+
+.about__info-title{
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-semi-bold);
+  color: var(--title-color);
+}
+
+.about__info-name{
+  font-size: var(--smaller-font-size);
+}
+
+.about__info-title, .about__info-name{
+  display: block;
+  text-align: center;
+}
+
+.about__buttons{
+  display: flex;
+  justify-content: center;
+}
+
+.button-about{
+  width: max-content;
+  display: flex;
+  align-items:center;
+}
+
+.button__download{
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-image:url('../img/download.png');
+  background-size: contain;
+  margin-left: var(--mb-0-5)
+}
+
 
 
 /*==================== SKILLS ====================*/
