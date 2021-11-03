@@ -49,4 +49,53 @@ function linkAction(){
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
+/*==================== ACCORDION SKILLS ====================*/
+const skillContent = document.getElementsByClassName('skills__content');
+const skillHeader = document.querySelectorAll('.skills__header');
+
+
+function toggleSkills(){
+  let itemClass = this.parentNode.className; //return the node father
+  
+  for(i=0; i<skillContent.length; i++){
+    skillContent[i].className = "skills__content skills__close"
+  };
+
+  if(itemClass === "skills__content skills__close"){
+    this.parentNode.className = "skills__content skills__open"
+  };
+};
+
+skillHeader.forEach((e) => {
+  e.addEventListener("click", toggleSkills)
+})
+
+/*==================== SKILLS DESCRIPTION ====================*/
+
+const skillContainer = document.getElementsByClassName('skill__container')
+const skillTitles = document.querySelectorAll('.skills__titles')
+
+
+// console.log(skillDescription[1]);
+
+function hideDescription(){
+
+  let descriptionClass = this.parentNode.className;
+
+  for(i=0; i<skillContainer.length; i++){
+    skillContainer[i].className = "skill__container skills__bar-close"
+
+    // console.log(skillDescription[i])
+  };
+
+  if(descriptionClass === "skill__container skills__bar-close"){
+    this.parentNode.className = "skill__container skills__bar-open"
+  };
+}
+
+skillTitles.forEach((e) => {
+  e.addEventListener("click", hideDescription)
+})
+// console.log(skillDescription)
+
 
