@@ -584,16 +584,105 @@ img{
 }
 
 /*==================== QUALIFICATION ====================*/
+.qualification__tabs{
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: var(--mb-2);
+}
+
+.qualification__button{
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+  cursor: pointer;
+  display: flex;
+}
+
+.qualification__button:hover{
+  color: var(--first-color);
+}
+
 .qualification__icon{
-  width: 32px;
-  height: 32px;
+  width: 30px;
+  height: 30px;
   background-repeat: no-repeat;
   background-image:url('../img/graduation.png');
   background-position: center;
   background-size: contain;
+  margin-right: 10px;
 }
 
+.qualification__icon-briefcase{
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-image:url('../img/briefcase\ \(2\).png');
+  background-position: center;
+  background-size: contain;
+  margin-right: 10px;
+}
 
+.qualification__data{
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  column-gap: 1.5rem;
+  justify-items: center;
+}
+
+.qualification__title{
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+}
+
+.qualification__subtitle{
+  display: inline-block;
+  font-size: var(--small-font-size);
+  margin-bottom: var(--mb-1);
+}
+
+.qualication__calendar{
+  font-size: 15px;
+  color: var(--text-color-light);
+  display: flex;
+  align-items: center;
+}
+
+.calendar__icon{
+  width: 15px;
+  height: 15px;
+  background-repeat: no-repeat;
+  background-image:url('../img/calendar.png');
+  background-position: center;
+  background-size: contain;
+  margin-right: 10px;
+}
+
+.qualification__rounder{
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background-color: var(--first-color);
+  border-radius: 50%;
+}
+
+.qualification__line{
+  display: block;
+  width: 1px;
+  height: 100%;
+  background-color: var(--first-color);
+  transform: translate(6px, -7px)
+}
+
+.qualification [data-content]{
+  display: none;
+}
+
+.qualification__active[data-content]{
+  display: block;
+}
+
+.qualification__button.qualification__active{
+  color: var(--first-color);
+}
 /*==================== SERVICES ====================*/
 
 
