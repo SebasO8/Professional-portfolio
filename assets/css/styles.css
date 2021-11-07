@@ -406,6 +406,16 @@ img{
   align-items: center;
 } */
 
+.button--white{
+  background-color: #fff;
+  color: var(--first-color);
+}
+
+.button--white:hover{
+  background-color: #fff;
+  color: var(--first-color);
+}
+
 .button--small{
   padding: .75rem 1rem;
 }
@@ -944,7 +954,60 @@ img{
 
 
 /*==================== PROJECT IN MIND ====================*/
+.project{
+  text-align: center;
+}
 
+.project__bg{
+  background-color: var(--first-color);
+  padding-top: 3rem;
+}
+
+.project__container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project__title{
+  font-size: var(--h2-font-size);
+  margin-bottom: var(--mb-0-75);
+}
+
+.project__description{
+  margin-bottom: var(--mb-1-5);
+}
+
+.project__title,
+.project__description{
+  color: #fff;
+}
+
+/* .project__img{
+  width: 232px;
+} */
+
+.project__button{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+.project__button-icon{
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-image:url('../img/send.png');
+  background-position: center;
+  background-size: contain;
+  margin-left: 10px;
+}
+
+.project__button:hover .project__button-icon{
+  transform: translateX(.25rem);
+}
 
 /*==================== TESTIMONIAL ====================*/
 
