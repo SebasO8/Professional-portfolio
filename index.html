@@ -22,42 +22,45 @@
       <div class="nav__menu" id="nav-menu">
         <ul class="nav__list grid">
           <li class="nav__item">
-            <a href="#home" class="nav__link">
-              <img src="./assets/img/home (2).png" alt="home"> Home
+            <a href="#home" class="nav__link active-link">
+              <i class="fas fa-home nav__icon"></i> Home
             </a>
           </li>
           <li class="nav__item">
             <a href="#about" class="nav__link">
-              <img src="./assets/img/account.png" alt="about"> About
+              <i class="fas fa-user nav__icon"></i> About
             </a>
           </li>
           <li class="nav__item">
             <a href="#skills" class="nav__link">
-              <img src="./assets/img/file (1).png" alt="skills"> Skills
+              <i class="fas fa-file-alt nav__icon" ></i> Skills
             </a>
           </li>
           <li class="nav__item">
             <a href="#services" class="nav__link">
-              <img src="./assets/img/briefcase (1).png" alt="services"> Services
+              <i class="fas fa-briefcase nav__icon"></i> Services
             </a>
           </li>
           <li class="nav__item">
             <a href="#portfolio" class="nav__link">
-              <img src="./assets/img/image.png" alt="portfolio"> Portfolio
+              <i class="far fa-image nav__icon"></i> Portfolio
             </a>
           </li>
           <li class="nav__item">
-            <a href="#contactme" class="nav__link">
-              <img src="./assets/img/send.png" alt="contactme"> Contactme
+            <a href="#contact" class="nav__link">
+              <i class="fas fa-paper-plane nav__icon"></i> Contactme
             </a>
           </li>
         </ul>
-        <img src="./assets/img/close.png" alt="close" class="nav__close" id="nav-close"> 
+        <i class="fas fa-times nav__close" id="nav-close"></i> 
       </div>
 
       <div class="nav__btns">
+        <!-- Theme change button -->
+        <i class="fas fa-moon change-theme" id="theme-button"></i>
+
         <div class="nav__toggle" id="nav-toggle">
-          <img src="./assets/img/app.png" class="nav__toggle__img" id='nav-toggle-img' alt="app">
+          <i class="fas fa-th-large nav__toggle__img"></i>
         </div>
       </div>
 
@@ -70,11 +73,12 @@
       <div class="home__container container grid">
         <div class="home__content grid">
           <div class="home__social">
-            <a href="#" class="home__social-icon1">
-              <!-- <img src="./assets/img/linkedin (1).png" target="_blank" alt="linkedin"> -->
+            <a href="https://www.linkedin.com/in/sebasti%C3%A1n-ocampo-l%C3%B3pez-46ba62225" target="_blank">
+              <i class="fab fa-linkedin home__social-icon"></i>
             </a>
-            <a href="#" class="home__social-icon2">
+            <a href="https://github.com/SebasO8" target="_blank">
               <!-- <img src="./assets/img/github (1).png" target="_blank" alt="github"> -->
+              <i class="fab fa-github home__social-icon"></i>
             </a>
           </div>
 
@@ -98,10 +102,10 @@
           </div>
 
           <div class="home__data">
-            <h1 class="home__title">Hi I'am Sebas</h1>
-            <h3 class="home__subtitle">Full Stack Developer</h3>
+            <h1 class="home__title">Hi I'm Sebas</h1>
+            <h3 class="home__subtitle"><span class="typed"></span> Developer</h3>
             <p class="home__description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras bibendum laoreet neque nec congue. Sed.
+              I am a web developer passionate about building dynamic sites, daily learning, and a technology lover.
             </p>
             <a href="#contact" class="button button--flex contacMe-button">
               Contact Me <div class="button__icon"></div>
@@ -111,9 +115,10 @@
 
         <div class="home__scroll">
           <a href="#about" class="home__scroll-button button--flex">
-            <div class="home__scroll-mouse"></div>
+            <!-- <div class="home__scroll-mouse"></div> -->
+            <i class="fas fa-mouse home__scroll-mouse"></i>
             <span class="home__scrol-name">Scroll down</span>
-            <div class="home__scroll-arrow"></div>
+            <i class="fas fa-arrow-down home__scroll-arrow"></i>
           </a>
         </div>
       </div>
@@ -124,11 +129,13 @@
       <h2 class="section__title titleAndSubtitle__about">About Me</h2>
       <span class="section__subtitle titleAndSubtitle__about">my introduccion</span>
       <div class="about__container container grid">
-        <img src="./assets/img/desarrollando.jpg" alt="aboutMe" class="about__img">
+        <img src="./assets/img/desarrollando.png" alt="aboutMe" class="about__img">
 
         <div class="about__data">
           <p class="about__description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis ante quis purus commodo auctor. Suspendisse ac porttitor risus, et.
+            I am a young web developer passionate about curiosity, enthusiasm, and technology.
+            <br>
+            I currently live in the city of Bogotá, Colombia. I am an active student of the 'Programate' Bootcamp in alliance with the SIMPLON international network trained as a full stack developer.
           </p>
           <!-- <div class="about__info">
             <div>
@@ -146,7 +153,7 @@
           </div> -->
 
           <div class="about__buttons">
-            <a download="" href="./assets/pdf/_Planteamientos de la estructura de Carpetas y la arquitectura del código.pdf" class="button button--flex button-about">
+            <a download="" href="./assets/pdf/_Planteamientos de la estructura de Carpetas y la arquitectura del código.pdf" class="button button--flex button-about" target="_blank">
               Download CV <div class="button__download"></div>
             </a>
           </div>
@@ -160,166 +167,194 @@
       <span class="section__subtitle">My technical level</span>
 
       <div class="skills__container container grid">
-        <div>
-          <!--------------- SKILLS 1--------------->
-          <div class="skills__content skills__open">
-            <div class="skills__header">
-              <div class="skills__icon bracket__icon"></div>
+        
+        <!--------------- SKILLS 1--------------->
+        <div class="skills__content skills__open">
+          <div class="skills__header">
+            <!-- <div class="skills__icon-margin skills__icon"></div> -->
+            <i class="fas fa-laptop-code skills__icon skills__icon-margin"></i>
 
-              <div>
-                <h1 class="skills__">Frontend Developer</h1>
-                <span class="skills__subtitle">More than 4 years</span>
-              </div>
-
-              <div class="skills__arrow"></div>
+            <div>
+              <h1 class="skills__title">Frontend Developer</h1>
+              <!-- <span class="skills__subtitle">More than 4 years</span> -->
             </div>
 
-            <div class="skills__list grid">
-              <div class="skills__data">
-
-                <div class="skill__container skills__bar-open">
-                  <div class="skills__titles">
-                    <h3 class="skills__name">HTML</h3>
-                    <span class="skills__titles-arrow"></span>
-                  </div>
-                  <div class="skills__bar ">
-                    <span class="skills__description">HTML is the standard markup language for creating Web pages.</span>
-                  </div>
-                </div>
-
-                <div class="skill__container skills__bar-close">
-                  <div class="skills__titles">
-                    <h3 class="skills__name">CSS</h3>
-                    <span class="skills__titles-arrow"></span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__description">CSS is the language we use to style a Web page.</span>
-                  </div>
-                </div>
-
-                <div class="skill__container skills__bar-close">
-                  <div class="skills__titles">
-                    <h3 class="skills__name">JavaScript</h3>
-                    <span class="skills__titles-arrow"></span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__description">JavaScript is a text-based programming language used both on the client-side and server-side that allows you to make web pages interactive.</span>
-                  </div>
-                </div>
-
-                <div class="skill__container skills__bar-close">
-                  <div class="skills__titles">
-                    <h3 class="skills__name ">TypeScript</h3>
-                    <span class="skills__titles-arrow"></span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__description">TypeScript is a strongly typed programming language which builds on JavaScript giving you better tooling at any scale.</span>
-                  </div>
-                </div>
-
-                <div class="skill__container skills__bar-close">
-                  <div class="skills__titles">
-                    <h3 class="skills__name ">Angular</h3>
-                    <span class="skills__titles-arrow"></span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__description">Angular is an open-source, JavaScript framework written in TypeScript. Google maintains it, and its primary purpose is to develop single-page applications.</span>
-                  </div>
-                </div>
-
-                <div class="skill__container skills__bar-close">
-                  <div class="skills__titles">
-                    <h3 class="skills__name ">React</h3>
-                    <span class="skills__titles-arrow"></span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__description">React is a library for helping developers build user interfaces (UIs) as a tree of small pieces called components.</span>
-                  </div>
-                </div>
-
-              </div>
-            </div>
+            <div class="skills__arrow"></div>
           </div>
-          <!--------------- SKILLS 2--------------->
-          <div class="skills__content skills__close">
-            <div class="skills__header">
-              <div class="skills__icon server__icon"></div>
 
-              <div>
-                <h1 class="skills__">Backend Developer</h1>
-                <span class="skills__subtitle">More than 2 years</span>
+          <div class="skills__list grid">
+            <div class="skills__data">
+
+              <div class="skill__container skills__bar-open">
+                <div class="skills__titles">
+                  <div class="skills__titles-container">
+                    <i class="fab fa-html5 skills__titles-icon"></i>
+                    <h3 class="skills__name">HTML</h3>
+                  </div>
+                  <span class="skills__titles-arrow"></span>
+                </div>
+                <div class="skills__bar ">
+                  <span class="skills__description">HTML is the standard markup language for creating Web pages.</span>
+                </div>
               </div>
 
-              <div class="skills__arrow"></div>
-            </div>
-
-            <div class="skills__list grid">
-              <div class="skills__data">
-
-                <div class="skill__container skills__bar-open">
-                  <div class="skills__titles">
-                    <h3 class="skills__name">MySQL</h3>
-                    <span class="skills__titles-arrow"></span>
+              <div class="skill__container skills__bar-close">
+                <div class="skills__titles">
+                  <div class="skills__titles-container">
+                    <i class="fab fa-css3-alt skills__titles-icon"></i>
+                    <h3 class="skills__name">CSS</h3>
                   </div>
-                  <div class="skills__bar ">
-                    <span class="skills__description">MySQL Database Service is a fully managed database service to deploy cloud-native applications.</span>
-                  </div>
+                  <span class="skills__titles-arrow"></span>
                 </div>
-
-                <div class="skill__container skills__bar-close">
-                  <div class="skills__titles">
-                    <h3 class="skills__name">NodeJs</h3>
-                    <span class="skills__titles-arrow"></span>
-                  </div>
-                  <div class="skills__bar ">
-                    <span class="skills__description">The Node.js run-time environment includes everything you need to execute a program written in JavaScript.</span>
-                  </div>
+                <div class="skills__bar">
+                  <span class="skills__description">CSS is a graphic design language for defining and creating the presentation of a structured document written in a markup language.</span>
                 </div>
-
-                <div class="skill__container skills__bar-close">
-                  <div class="skills__titles">
-                    <h3 class="skills__name">Express</h3>
-                    <span class="skills__titles-arrow"></span>
-                  </div>
-                  <div class="skills__bar ">
-                    <span class="skills__description">Express is a minimal and flexible Node.js web application framework that provides a robust set of features to develop web and mobile applications.</span>
-                  </div>
-                </div>
-
-                <div class="skill__container skills__bar-close">
-                  <div class="skills__titles">
-                    <h3 class="skills__name">Python</h3>
-                    <span class="skills__titles-arrow"></span>
-                  </div>
-                  <div class="skills__bar ">
-                    <span class="skills__description">Python is an interpreted, object-oriented, high-level programming language with dynamic semantics.</span>
-                  </div>
-                </div>
-
-                <div class="skill__container skills__bar-close">
-                  <div class="skills__titles">
-                    <h3 class="skills__name">Django</h3>
-                    <span class="skills__titles-arrow"></span>
-                  </div>
-                  <div class="skills__bar ">
-                    <span class="skills__description">Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design.</span>
-                  </div>
-                </div>
-
-                <div class="skill__container skills__bar-close">
-                  <div class="skills__titles">
-                    <h3 class="skills__name">PHP</h3>
-                    <span class="skills__titles-arrow"></span>
-                  </div>
-                  <div class="skills__bar ">
-                    <span class="skills__description">PHP is a server side scripting language. that is used to develop Static websites or Dynamic websites or Web applications.</span>
-                  </div>
-                </div>
-
               </div>
+
+              <div class="skill__container skills__bar-close">
+                <div class="skills__titles">
+                  <div class="skills__titles-container">
+                    <i class="fab fa-js-square skills__titles-icon"></i>
+                    <h3 class="skills__name">JavaScript</h3>
+                  </div>
+                  <span class="skills__titles-arrow"></span>
+                </div>
+                <div class="skills__bar">
+                  <span class="skills__description">JavaScript is a text-based programming language used both on the client-side and server-side that allows you to make web pages interactive</span>
+                </div>
+              </div>
+
+              <div class="skill__container skills__bar-close">
+                <div class="skills__titles">
+                  <h3 class="skills__name ">TypeScript</h3>
+                  <span class="skills__titles-arrow"></span>
+                </div>
+                <div class="skills__bar">
+                  <span class="skills__description">TypeScript is a strongly typed programming language which builds on JavaScript giving you better tooling at any scale.</span>
+                </div>
+              </div>
+
+              <div class="skill__container skills__bar-close">
+                <div class="skills__titles">
+                  <div class="skills__titles-container">
+                    <i class="fab fa-angular skills__titles-icon"></i>
+                    <h3 class="skills__name">Angular</h3>
+                  </div>
+                  <span class="skills__titles-arrow"></span>
+                </div>
+                <div class="skills__bar">
+                  <span class="skills__description">Angular is an open-source, JavaScript framework written in TypeScript. Google maintains it, and its primary purpose is to develop single-page applications.</span>
+                </div>
+              </div>
+
+              <div class="skill__container skills__bar-close">
+                <div class="skills__titles">
+                  <div class="skills__titles-container">
+                    <i class="fab fa-react skills__titles-icon"></i>
+                    <h3 class="skills__name">React</h3>
+                  </div>
+                  <span class="skills__titles-arrow"></span>
+                </div>
+                <div class="skills__bar">
+                  <span class="skills__description">React is a library for helping developers build user interfaces (UIs) as a tree of small pieces called components.</span>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
+        <!--------------- SKILLS 2--------------->
+        <div class="skills__content skills__close">
+          <div class="skills__header">
+            <!-- <div class="skills__icon-margin server__icon"></div> -->
+            <i class="fas fa-server skills__icon skills__icon-margin"></i>
+
+            <div>
+              <h1 class="skills__title">Backend Developer</h1>
+              <!-- <span class="skills__subtitle">More than 2 years</span> -->
+            </div>
+
+            <div class="skills__arrow"></div>
+          </div>
+
+          <div class="skills__list grid">
+            <div class="skills__data">
+
+              <div class="skill__container skills__bar-open">
+                <div class="skills__titles">
+                  <div class="skills__titles-container">
+                    <i class="fas fa-database skills__titles-icon"></i>
+                    <h3 class="skills__name">MySQL</h3>
+                  </div>
+                  <span class="skills__titles-arrow"></span>
+                </div>
+                <div class="skills__bar ">
+                  <span class="skills__description">MySQL Database Service is a fully managed database service to deploy cloud-native applications.</span>
+                </div>
+              </div>
+
+              <div class="skill__container skills__bar-close">
+                <div class="skills__titles">
+                  <div class="skills__titles-container">
+                    <i class="fab fa-node-js skills__titles-icon"></i>
+                    <h3 class="skills__name">NodeJs</h3>
+                  </div>
+                  <span class="skills__titles-arrow"></span>
+                </div>
+                <div class="skills__bar ">
+                  <span class="skills__description">The Node.js run-time environment includes everything you need to execute a program written in JavaScript.</span>
+                </div>
+              </div>
+
+              <div class="skill__container skills__bar-close">
+                <div class="skills__titles">
+                  <h3 class="skills__name">Express</h3>
+                  <span class="skills__titles-arrow"></span>
+                </div>
+                <div class="skills__bar ">
+                  <span class="skills__description">Express is a minimal and flexible Node.js web application framework that provides a robust set of features to develop web and mobile applications.</span>
+                </div>
+              </div>
+
+              <div class="skill__container skills__bar-close">
+                <div class="skills__titles">
+                  <div class="skills__titles-container">
+                    <i class="fab fa-python skills__titles-icon"></i>
+                    <h3 class="skills__name">Python</h3>
+                  </div>
+                  <span class="skills__titles-arrow"></span>
+                </div>
+                <div class="skills__bar ">
+                  <span class="skills__description">Python is an interpreted, object-oriented, high-level programming language with dynamic semantics.</span>
+              </div>
+
+              <div class="skill__container skills__bar-close">
+                <div class="skills__titles">
+                  <h3 class="skills__name">Django</h3>
+                  <span class="skills__titles-arrow"></span>
+                </div>
+                <div class="skills__bar ">
+                  <span class="skills__description">Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design.</span>
+                </div>
+              </div>
+
+              <div class="skill__container skills__bar-close">
+                <div class="skills__titles">
+                  <div class="skills__titles-container">
+                    <i class="fab fa-php skills__titles-icon"></i>
+                    <h3 class="skills__name">PHP</h3>
+                  </div>
+                  <span class="skills__titles-arrow"></span>
+                </div>
+                <div class="skills__bar ">
+                  <span class="skills__description">PHP is a server side scripting language. that is used to develop Static websites or Dynamic websites or Web applications.</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      
       </div>
     </section>
 
@@ -331,28 +366,29 @@
       <div class="qualification__container container">
         <div class="qualification__tabs">
           <div class="qualification__button button--flex qualification__active" data-target="#education">
-            <div class="qualification__icon"></div>
+            <!-- <div class="qualification__icon"></div> -->
+            <i class="fas fa-graduation-cap qualification__icon"></i>
             Education
           </div>
 
           <div class="qualification__button button--flex" data-target="#work">
-            <div class="qualification__icon-briefcase"></div>
+            <i class="fas fa-toolbox qualification__icon"></i>
             Work
           </div>
         </div>
 
         <div class="qualification__sections">
-          <!--------------- QUALIFICATION CONTENT 1--------------->
+          <!--------------- QUALIFICATION CONTENT --------------->
           <div class="qualification__content qualification__active" data-content  id="education">
             <!-- data-content extends the associated data of an element -->
             <!--------------- QUALIFICATION 1--------------->
             <div class="qualification__data">
               <div>
-                <h3 class="qualificaton__title">titulo</h3>
-                <span class="qualification__subtitle">lugar donde se estudia</span>
+                <h3 class="qualificaton__title">Full Stack Web Developer</h3>
+                <span class="qualification__subtitle">Educamás - Programáte, Colombia</span>
                 <div class="qualication__calendar">
-                  <div class="calendar__icon"></div>
-                  xxxx - xxxx
+                  <i class="far fa-calendar-alt calendar__icon"></i>
+                  Jun 2021 - Present
                 </div>
               </div>
 
@@ -372,25 +408,23 @@
               </div>
 
               <div>
-                <h3 class="qualificaton__title">titulo 2</h3>
-                <span class="qualification__subtitle">lugar donde se estudia</span>
+                <h3 class="qualificaton__title">Tool Management Microsoft Office 2016: Excel</h3>
+                <span class="qualification__subtitle">SENA: Servicio Nacional de Aprendizaje, Colombia</span>
                 <div class="qualication__calendar">
-                  <div class="calendar__icon"></div>
-                  xxxx - xxxx
+                  <i class="far fa-calendar-alt calendar__icon"></i>
+                  40-hour course 2021
                 </div>
               </div>
-
-              
             </div>
 
             <!--------------- QUALIFICATION 3--------------->
             <div class="qualification__data">
               <div>
-                <h3 class="qualificaton__title">titulo 3</h3>
-                <span class="qualification__subtitle">lugar donde se estudia</span>
+                <h3 class="qualificaton__title">Accounting management workshop course</h3>
+                <span class="qualification__subtitle">Pontificia Universidad Javeriana, Colombia</span>
                 <div class="qualication__calendar">
-                  <div class="calendar__icon"></div>
-                  xxxx - xxxx
+                  <i class="far fa-calendar-alt calendar__icon"></i>
+                  Jul 2020 - Sep 2020
                 </div>
               </div>
 
@@ -406,44 +440,45 @@
 
               <div>
                 <span class="qualification__rounder"></span>
-                <!-- <span class="qualification__line"></span> -->
+                 <!-- <span class="qualification__line"></span>
+                 <span class="qualification__rounder"></span>  -->
               </div>
 
               <div>
-                <h3 class="qualificaton__title">titulo 4</h3>
-                <span class="qualification__subtitle">lugar donde se estudia</span>
+                <h3 class="qualificaton__title">High School Graduate</h3>
+                <span class="qualification__subtitle">Colegio Santa Luisa, Colombia</span>
                 <div class="qualication__calendar">
-                  <div class="calendar__icon"></div>
-                  xxxx - xxxx
+                  <i class="far fa-calendar-alt calendar__icon"></i>
+                  2008 - 2020
                 </div>
               </div>
-
-              
             </div>
 
           </div>
 
-          <!--------------- QUALIFICATION CONTENT 2--------------->
+          <!--------------- WORK CONTENT --------------->
           <div class="qualification__content" data-content id="work">
-            <!--------------- QUALIFICATION 1--------------->
+            <!--------------- WORK 1--------------->
             <div class="qualification__data">
               <div>
-                <h3 class="qualificaton__title">titulo works</h3>
-                <span class="qualification__subtitle">lugar donde se estudia</span>
+                <h3 class="qualificaton__title">Administrative assistant</h3>
+                <span class="qualification__subtitle">CID TAX SAS</span>
                 <div class="qualication__calendar">
-                  <div class="calendar__icon"></div>
-                  xxxx - xxxx
+                  <i class="far fa-calendar-alt calendar__icon"></i>
+                  Jun 2021 - Jul 2021
+                  <br>
+                  work for holiday season 
                 </div>
               </div>
 
               <div>
                 <span class="qualification__rounder"></span>
-                <span class="qualification__line"></span>
+                <!-- <span class="qualification__line"></span> -->
               </div>
             </div>
 
-            <!--------------- QUALIFICATION 2--------------->
-            <div class="qualification__data">
+            <!--------------- WORK 2--------------->
+            <!-- <div class="qualification__data">
               <div></div>
 
               <div>
@@ -455,21 +490,21 @@
                 <h3 class="qualificaton__title">titulo W 2</h3>
                 <span class="qualification__subtitle">lugar donde se estudia</span>
                 <div class="qualication__calendar">
-                  <div class="calendar__icon"></div>
+                  <i class="far fa-calendar-alt calendar__icon"></i>
                   xxxx - xxxx
                 </div>
               </div>
 
               
-            </div>
+            </div> -->
 
-            <!--------------- QUALIFICATION 3--------------->
-            <div class="qualification__data">
+            <!--------------- WORK 3--------------->
+            <!-- <div class="qualification__data">
               <div>
                 <h3 class="qualificaton__title">titulo 3</h3>
                 <span class="qualification__subtitle">lugar donde se estudia</span>
                 <div class="qualication__calendar">
-                  <div class="calendar__icon"></div>
+                  <i class="far fa-calendar-alt calendar__icon"></i>
                   xxxx - xxxx
                 </div>
               </div>
@@ -478,24 +513,24 @@
                 <span class="qualification__rounder"></span>
                 <span class="qualification__line"></span>
               </div>
-            </div>
+            </div> -->
 
-            <!--------------- QUALIFICATION 4--------------->
-            <div class="qualification__data">
+            <!--------------- WORK 4--------------->
+            <!-- <div class="qualification__data">
               <div></div>
 
               <div>
                 <span class="qualification__rounder"></span>
-                <!-- <span class="qualification__line"></span> -->
+                <span class="qualification__line"></span>
               </div>
 
               <div>
                 <h3 class="qualificaton__title">titulo 4</h3>
                 <span class="qualification__subtitle">lugar donde se estudia</span>
                 <div class="qualication__calendar">
-                  <div class="calendar__icon"></div>
+                  <i class="far fa-calendar-alt calendar__icon"></i>
                   xxxx - xxxx
-                </div>
+                </div> -->
               </div>
 
               
@@ -515,40 +550,43 @@
         <!--------------- SERVICES 1 --------------->
         <div class="services__content">
           <div>
-            <div class="services__icon-1"></div>
+            <!-- <div class="services__icon-1"></div> -->
+            <i class="fas fa-desktop services__icon"></i>
+            
             <h3 class="services__title">Frontend <br> Developer</h3>
           </div>
 
           <span class="button button--flex button--small button--link services__button">
             View More
-            <div class="services__button-icon"></div>
+            <i class="fas fa-arrow-right services__button-icon"></i>
           </span>
 
           <div class="services__modal">
             <div class="services__modal-content">
               <h4 class="services__modal-title">Frontend <br> Developer</h4>
-              <div class="services__modal-close"></div>
+              <!-- <div class="services__modal-close"></div> -->
+              <i class="fas fa-times services__modal-close"></i>
 
               <ul class="services__modal-services grid">
 
                 <li class="services__modal-service">
                   <div class="services_-modal-check"></div>
-                  <p>servicio que ofrece</p>
+                  <p>Developing a dynamic web user interface</p>
                 </li>
 
                 <li class="services__modal-service">
                   <div class="services_-modal-check"></div>
-                  <p>servicio que ofrece</p>
+                  <p>Content management solution</p>
                 </li>
 
                 <li class="services__modal-service">
                   <div class="services_-modal-check"></div>
-                  <p>servicio que ofrece</p>
+                  <p>Ease of user navigation</p>
                 </li>
 
                 <li class="services__modal-service">
                   <div class="services_-modal-check"></div>
-                  <p>servicio que ofrece</p>
+                  <p>Colorimetry design, banners, images, fonts among others</p>
                 </li>
 
               </ul>
@@ -559,114 +597,44 @@
         <!--------------- SERVICES 2 --------------->
         <div class="services__content">
           <div>
-            <div class="services__icon"></div>
+            <!-- <div class="services__icon"></div> -->
+            <i class="fas fa-code services__icon"></i>
             <h3 class="services__title">Backend <br> Developer</h3>
           </div>
 
           <span class="button button--flex button--small button--link services__button">
             View More
-            <div class="services__button-icon"></div>
+            <!-- <div class="services__button-icon"></div> -->
+            <i class="fas fa-arrow-right services__button-icon"></i>
           </span>
 
           <div class="services__modal">
             <div class="services__modal-content">
               <h4 class="services__modal-title">Backend <br> Developer</h4>
-              <div class="services__modal-close"></div>
+              <!-- <div class="services__modal-close"></div> -->
+              <i class="fas fa-times services__modal-close"></i>
 
               <ul class="services__modal-services grid">
 
                 <li class="services__modal-service">
                   <div class="services_-modal-check"></div>
-                  <p>servicio que ofrece</p>
+                  <p>Development of relational and non-relational database</p>
                 </li>
 
                 <li class="services__modal-service">
                   <div class="services_-modal-check"></div>
-                  <p>servicio que ofrece</p>
+                  <p>Development of data access components</p>
                 </li>
 
                 <li class="services__modal-service">
                   <div class="services_-modal-check"></div>
-                  <p>servicio que ofrece</p>
+                  <p>Development of the logic for handling the application data</p>
                 </li>
 
-                <li class="services__modal-service">
-                  <div class="services_-modal-check"></div>
-                  <p>servicio que ofrece</p>
-                </li>
-                
               </ul>
             </div>
           </div>
         </div>
-      </div>
-
-    </section>
-    <!---------------PORTFOLIO --------------->
-    <section class="portfolio section" id="portfolio">
-      <h2 class="section__title">Portfolio</h2>
-      <span class="section__subtitle">Most Recent work</span>
-
-      <div class="portfolio__container container swiper-container">
-        <div class="swiper-wrapper">
-          <!---------------PORTFOLIO 1 --------------->
-          <div class="portfolio__content grid swiper-slide">
-            <img src="https://i.ibb.co/V2r8gjm/deploy50challenges.png" alt="JavaScriptChallenges" class="portfolio__img">
-
-            <div class="portfolio__data">
-              <h3 class="portfolio__title">Modern Website1</h3>
-              <p class="portfolio__description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dui sapien, varius non egestas et, eleifend eu sem. Suspendisse metus.
-              </p>
-              <a href="#" class="button button--flex button--small portfolio__button">
-                Demo
-                <div class="portfolio__button-icon"></div>
-              </a>
-            </div>
-          </div>
-          <!---------------PORTFOLIO 2 --------------->
-          <div class="portfolio__content grid swiper-slide">
-            <img src="https://i.ibb.co/V2r8gjm/deploy50challenges.png" alt="JavaScriptChallenges" class="portfolio__img">
-
-            <div class="portfolio__data">
-              <h3 class="portfolio__title">Modern Website2</h3>
-              <p class="portfolio__description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dui sapien, varius non egestas et, eleifend eu sem. Suspendisse metus.
-              </p>
-              <a href="#" class="button button--flex button--small portfolio__button">
-                Demo
-                <div class="portfolio__button-icon"></div>
-              </a>
-            </div>
-          </div>
-          <!---------------PORTFOLIO 3 --------------->
-          <div class="portfolio__content grid swiper-slide">
-            <img src="https://i.ibb.co/V2r8gjm/deploy50challenges.png" alt="JavaScriptChallenges" class="portfolio__img">
-
-            <div class="portfolio__data">
-              <h3 class="portfolio__title">Modern Website3</h3>
-              <p class="portfolio__description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dui sapien, varius non egestas et, eleifend eu sem. Suspendisse metus.
-              </p>
-              <a href="#" class="button button--flex button--small portfolio__button">
-                Demo
-                <div class="portfolio__button-icon"></div>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Add Arrows -->
-        <div class="swiper-button-next">
-          <div class="swiper-button-icon"></div>
-        </div>
-        <div class="swiper-button-prev">
-          <div class="swiper-button-icon icon-prev"></div>
-        </div>
-
-        <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
-
       </div>
 
     </section>
@@ -690,27 +658,340 @@
         </div>    
       </div>
     </section>
+    
+    <!---------------PORTFOLIO --------------->
+    <section class="portfolio section" id="portfolio">
+      <h2 class="section__title">Portfolio</h2>
+      <span class="section__subtitle">Most Recent work</span>
 
-    <!---------------TESTIMONIAL --------------->
-    <section class="testimonial section">
-        
+      <div class="portfolio__container container swiper-container">
+        <div class="swiper-wrapper">
+          <!---------------PORTFOLIO 1 --------------->
+          <div class="portfolio__content grid swiper-slide">
+            <img src="https://i.ibb.co/41gqX46/mercatodo.png" alt="JavaScriptChallenges" class="portfolio__img">
+
+            <div class="portfolio__data">
+              <h3 class="portfolio__title">CRUD MercaTodo</h3>
+              <p class="portfolio__description">
+                In this project, it's created a basic system for manage the inventory from the Mercatodo supermarket.
+              </p>
+              <div class="portfolio__buttons">
+                <a href="https://github.com/SebasO8/Mercatodo_API" class="button button--flex button--small portfolio__button">
+                  Github
+                  <div class="portfolio__button-icon"></div>
+                </a>
+                <a href="https://mercatodo-crud.netlify.app/" class="button button--flex button--small portfolio__button">
+                  Demo
+                  <div class="portfolio__button-icon"></div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!---------------PORTFOLIO 2 --------------->
+          <div class="portfolio__content grid swiper-slide">
+            <img src="https://i.ibb.co/VT350Bs/Tlali.png" alt="JavaScriptChallenges" class="portfolio__img">
+
+            <div class="portfolio__data">
+              <h3 class="portfolio__title">Tlali Webshop</h3>
+              <p class="portfolio__description">
+                In this project, it is created a webshop for the Tlali enterprise.
+              </p>
+              <div class="portfolio__buttons">
+                <a href="https://github.com/SebasO8/Tlali" class="button button--flex button--small portfolio__button">
+                  Github
+                  <div class="portfolio__button-icon"></div>
+                </a>
+                <a href="https://tlali.vercel.app/" class="button button--flex button--small portfolio__button">
+                  Demo
+                  <div class="portfolio__button-icon"></div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!---------------PORTFOLIO 3 --------------->
+          <div class="portfolio__content grid swiper-slide">
+            <img src="https://i.ibb.co/ckV6RtD/tetris.png" alt="JavaScriptChallenges" class="portfolio__img">
+
+            <div class="portfolio__data">
+              <h3 class="portfolio__title">Tetris</h3>
+              <p class="portfolio__description">
+                In this project, we created a copy of the famous game Tetris.
+              </p>
+              <div class="portfolio__buttons">
+                <a href="https://github.com/suarezt3/Tetris" class="button button--flex button--small portfolio__button">
+                  Github
+                  <div class="portfolio__button-icon"></div>
+                </a>
+                <a href="https://tetris-programate.netlify.app/" class="button button--flex button--small portfolio__button">
+                  Demo
+                  <div class="portfolio__button-icon"></div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!---------------PORTFOLIO 4 --------------->
+          <div class="portfolio__content grid swiper-slide">
+            <img src="https://i.ibb.co/K6L9vHf/intopcol.png" alt="JavaScriptChallenges" class="portfolio__img">
+
+            <div class="portfolio__data">
+              <h3 class="portfolio__title">Intopcol</h3>
+              <p class="portfolio__description">
+                This application was designed to INTOPCOL to make more comfortable the communication through an internal chat between the different area in the company with their employee.
+              </p>
+              <div class="portfolio__buttons">
+                <a href="https://github.com/RafaelRamirez21/Chat-Messaging-App-" class="button button--flex button--small portfolio__button">
+                  Github
+                  <div class="portfolio__button-icon"></div>
+                </a>
+                <a href="https://chat-messaging-app.netlify.app/" class="button button--flex button--small portfolio__button">
+                  Demo
+                  <div class="portfolio__button-icon"></div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+
+        <!-- Add Arrows -->
+        <div class="swiper-button-next">
+          <i class="fas fa-chevron-right swiper-button-icon"></i>
+        </div>
+        <div class="swiper-button-prev">
+          <i class="fas fa-chevron-left swiper-button-icon"></i>
+        </div>
+
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+
+      </div>
 
     </section>
 
+    
+
+    <!---------------TESTIMONIAL --------------->
+    <!-- <section class="testimonial section">
+      <h2 class="section__title">Testimonial</h2>
+      <span class="section__subtitle">My client saying</span>
+
+      <div class="testimonial__container container swiper-container">
+        <div class="swiper-wrapper">
+          <-------------TESTIMONIAL 1 -------------
+          <div class="testimonial__content swiper-slide">
+            <div class="testimonial__data">
+              <div class="testimonial__header">
+                <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80" alt="" class="testimonial__img">
+
+                <div>
+                  <h3 class="testimonial__name">Nombre</h3>
+                  <span class="testimonial__client">Client</span>
+                </div>
+              </div>
+
+              <div class="testimonial__icon-container">
+                <i class="far fa-star testimonial__icon-star"></i>
+                <i class="far fa-star testimonial__icon-star"></i>
+                <i class="far fa-star testimonial__icon-star"></i>
+                <i class="far fa-star testimonial__icon-star"></i>
+                <i class="far fa-star testimonial__icon-star"></i>
+              </div>
+            </div>
+            <p class="testimonial__description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu volutpat lacus. Nunc.
+            </p>
+          </div>
+          -------------TESTIMONIAL 2 -------------
+          <div class="testimonial__content swiper-slide">
+            <div class="testimonial__data">
+              <div class="testimonial__header">
+                <img src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=580&q=80" alt="" class="testimonial__img">
+
+                <div>
+                  <h3 class="testimonial__name">Nombre2</h3>
+                  <span class="testimonial__client">Client</span>
+                </div>
+              </div>
+
+              <div class="testimonial__icon-container">
+                <i class="far fa-star testimonial__icon-star"></i>
+                <i class="far fa-star testimonial__icon-star"></i>
+                <i class="far fa-star testimonial__icon-star"></i>
+                <i class="far fa-star testimonial__icon-star"></i>
+                <i class="far fa-star testimonial__icon-star"></i>
+              </div>
+            </div>
+            <p class="testimonial__description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu volutpat lacus. Nunc.
+            </p>
+          </div>
+          -------------TESTIMONIAL 3 -------------
+          <div class="testimonial__content swiper-slide">
+            <div class="testimonial__data">
+              <div class="testimonial__header">
+                <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80" alt="" class="testimonial__img">
+
+                <div>
+                  <h3 class="testimonial__name">Nombre3</h3>
+                  <span class="testimonial__client">Client</span>
+                </div>
+              </div>
+
+              <div class="testimonial__icon-container">
+                <i class="far fa-star testimonial__icon-star"></i>
+                <i class="far fa-star testimonial__icon-star"></i>
+                <i class="far fa-star testimonial__icon-star"></i>
+                <i class="far fa-star testimonial__icon-star"></i>
+                <i class="far fa-star testimonial__icon-star"></i>
+              </div>
+            </div>
+            <p class="testimonial__description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu volutpat lacus. Nunc.
+            </p>
+          </div>
+        </div>
+
+         Add Pagination 
+        <div class="swiper-pagination swiper-pagination-testimonial"></div>
+      </div>
+    </section> -->
+
     <!---------------CONTACT ME --------------->
     <section class="contact section" id="contact">
+      <h2 class="section__title">Contact Me</h2>
+      <span class="section__subtitle">Get in touch</span>
+      
+      <div class="contact__container container grid">
+        <div>
+          <div class="contact__information">
+            <i class="fas fa-phone contact__icon"></i>
 
+            <div>
+              <h3 class="contact__title">Call Me</h3>
+              <span class="contact__subtitle">
+                +57 320-834-2073
+              </span>
+            </div>
+          </div>
+
+          <div class="contact__information">
+            <i class="fas fa-envelope contact__icon"></i>
+
+            <div>
+              <h3 class="contact__title">Email</h3>
+              <span class="contact__subtitle">
+                sebastianocampolopez507@gmail.com
+              </span>
+            </div>
+          </div>
+          
+          <div class="contact__information">
+            <i class="fas fa-map-marker-alt contact__icon"></i>
+
+            <div>
+              <h3 class="contact__title">Location</h3>
+              <span class="contact__subtitle">
+                Colombia - Bogotá
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact__form grid" id="contact-form">
+          <div class="contact__inputs grid">
+            <div class="contact__content">
+              <label for="" class="contact__label">Name</label>
+              <input type="text" class="contact__input username" name="name" required>
+            </div>
+            <div class="contact__content">
+              <label for="" class="contact__label">Email</label>
+              <input type="email" class="contact__input email" name="email" required>
+            </div>
+          </div>
+          <div class="contact__content">
+            <label for="" class="contact__label">Project</label>
+            <input type="text" class="contact__input contactform-project" name="Contacproject" required>
+          </div>
+          <div class="contact__content">
+            <label for="" class="contact__label">Message</label>
+            <textarea name="message" id="" cols="0" rows="7" class="contact__input message" required></textarea>
+          </div>
+            <button type="submit" class="button submit">
+              Send Message
+              <i class="fas fa-paper-plane submit"></i>
+            </button>
+          <div>
+
+          </div>
+        </form>
+
+      </div>
 
     </section>
 
   </main>
 
   <!--------------- FOOTER --------------->
+  <footer class="footer">
+    <div class="footer__bg">
+      <div class="footer__container container grid">
+        <div>
+          <h1 class="footer__title">Sebas</h1>
+          <span class="footer__subtitle">Full Stack Developer</span> 
+        </div>
 
+        <ul class="footer__links">
+          <li>
+            <a href="#services" class="footer__link">Services</a>
+          </li>
+          <li>
+            <a href="#portfolio" class="footer__link">Portfolio</a>
+          </li>
+          <li>
+            <a href="#contact" class="footer__link">Contactme</a>
+          </li>
+        </ul>
+
+        <div class="footer__socials">
+          <a href="https://github.com/SebasO8" target="_blank" class="footer__social">
+            <i class="fab fa-github"></i>
+          </a>
+
+          <a href="https://wa.me/3108342073?text=hello I%20have%20a%20new%20project%20and%20I%20would%20like%20to%20contact%20you" target="_blank" class="footer__social">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+
+          <a href="https://www.linkedin.com/in/sebasti%C3%A1n-ocampo-l%C3%B3pez-46ba62225" target="_blank" class="footer__social">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+
+      <p class="footer__copy">&#169;. All rigth reserved</p>
+    </div>
+  </footer>
   <!--------------- SCROLL TOP --------------->
+  <a href="#home" class="scrollup" id="scroll-up">
+    <i class="fas fa-arrow-up scroll__up-icon"></i>
+  </a>
+
+
+  <!--------------- EmailJS --------------->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+  <!--------------- TYPED JS --------------->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+  <!--------------- SWEET ALERT --------------->
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
   <!--------------- SWIPER JS --------------->
   <script src="./assets/js/swiper-bundle.min.js"></script>
+
+  <!--------------- FONT AWESOME --------------->
+  <script src="https://kit.fontawesome.com/73b55228c5.js" crossorigin="anonymous"></script>
 
   <!--------------- MAIN JS --------------->
   <script src="./assets/js/main.js"></script>
